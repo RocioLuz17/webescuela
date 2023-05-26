@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="arte, artistica, escuela">
+        <meta name="description" content="Escuela de arte">
+        <link rel="icon" type="image/x-icon" href="img/arte.ico">
+        <!--<script>console.log("Hola mundo");
+            document.writeln("Hola mundo desde Javascript2");
+            document.writeln("<h1>Hola mundo desde Javascript2<h1>");
+        </script>-->
+        <link rel="stylesheet" href="style/estilos.css" />
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Vina+Sans&display=swap" rel="stylesheet">
+        
+        <title>Contacto</title>
+    </head>
+    <body>
+            <section id="contacto">
+            <header>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+            </header>
+            <h1>Contacto</h1>
+    
+          
+    
+            <h3>Envianos tu consulta</h3>
+            <div>
+                    <form action="https://formspree.io/f/mlekzyee" method="POST" onsubmit="return validarFormulario()">  
+                        <div>
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input size="30" type="text" name="nombre_ing" id="nombre" placeholder="Nombre...">
+                        </div>
+                        
+                        <div>
+                            <label for="telefono"class="form-label">Telefono:</label>
+                        <input size="30" type="text" name="telefono_ing" id="telefono" placeholder="Teléfono">
+                        </div>
+                        <div>
+                            <label for="email"class="form-label">Email:</label>
+                        <input size="30" type="text" name="email_ing" id="email" placeholder="Email...">
+                        </div>
+                        <div>
+                            <label for="fuente"class="form-label">¿Cómo nos conociste?</label>
+                            <select name="fuente" id="fuente">
+                                <option ></option>
+                            <option>Instagram</option>
+                            <option>Facebook</option>
+                            <option>Via Pública</option>
+                            <option>Recomendación</option>
+                            </select>
+                        </div>
+                    <div>
+                        <label for="comentario">Comentario:</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="50" placeholder="Comentario..."></textarea>
+                    </div>
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                    </form>
+            </div>
+        </section>
+      
+
+    <script src="js/validacion.js"></script>
+    </body>
+    </html>
